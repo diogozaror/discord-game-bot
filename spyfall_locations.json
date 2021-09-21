@@ -1,0 +1,400 @@
+{
+    "locations":[
+        {
+            "Location":"Banco",
+            "Roles":[
+                "Ladrão",
+                "Caixa",
+                "Civíl",
+                "Motorista de Carro-Forte",
+                "Segurança",
+                "Gerente"
+            ]
+        },
+        {
+            "Location":"Avião",
+            "Roles":[
+                "Passageiro de Primeira Classe",
+                "Intruso",
+                "Mala",
+                "Comissária de Bordo",
+                "Co-Piloto",
+                "Capitão",
+                "Passageiro de Classe Econômica"
+            ]
+        },
+        {
+            "Location":"Praia",
+            "Roles":[
+                "Garçom de Quiosque",
+                "Surfista",
+                "Salva-vidas",
+                "Ladrão",
+                "Fotográfo",
+                "Vendedor de Picolé",
+                "Banhista",
+                "Jogador de Futebol de Areia"
+            ]
+        },
+        {
+            "Location":"Igreja",
+            "Roles":[
+                "Padre",
+                "Mendigo",
+                "Pecador",
+                "Turista",
+                "Membro da Igreja",
+                "Membro do Coral",
+                "Cerimonialista"
+            ]
+        },
+        {
+            "Location":"Circo",
+            "Roles":[
+                "Acrobata",
+                "Caixa",
+                "Mágico",
+                "Engole-Fogo",
+                "Palhaço",
+                "Malabarista",
+                "Visitante"
+            ]
+        },
+        {
+            "Location":"Festa Empresarial",
+            "Roles":[
+                "Coach Quântico",
+                "Gerente",
+                "Intruso",
+                "Dono da Empresa",
+                "Secretário",
+                "Pessoa do RH",
+                "Contador"
+            ]
+        },
+        {
+            "Location":"As Cruzadas",
+            "Roles":[
+                "Monge",
+                "Prisioneiro Herege",
+                "Servo",
+                "Bispo",
+                "Escudeiro",
+                "Arqueiro",
+                "Cavaleiro"
+            ]
+        },
+        {
+            "Location":"Casino",
+            "Roles":[
+                "Negociante",
+                "Bartender",
+                "Chefe de Segurança",
+                "Segurança",
+                "Gerente",
+                "Traficante",
+                "Apostador"
+            ]
+        },
+        {
+            "Location":"SPA de Beleza",
+            "Roles":[
+                "Cabeleireiro",
+                "Massagista",
+                "Manicure",
+                "Maquiador",
+                "Dermatologista",
+                "Esteticista",
+                "Cliente"
+            ]
+        },
+        {
+            "Location":"Embaixada",
+            "Roles":[
+                "Segurança",
+                "Embaixador",
+                "Secretário",
+                "Turista",
+                "Refugiado",
+                "Diplomata",
+                "Oficial do Governo"
+            ]
+        },
+        {
+            "Location":"Hospital",
+            "Roles":[
+                "Enfermeiro",
+                "Doutor",
+                "Anestesista",
+                "Estagiário",
+                "Terapeuta",
+                "Cirurgião",
+                "Paciente",
+                "Técnico em Enfermagem"
+            ]
+        },
+        {
+            "Location":"Hotel",
+            "Roles":[
+                "Porteiro",
+                "Segurança",
+                "Gerente",
+                "Camareira",
+                "Bartender",
+                "Secretário",
+                "Cliente"
+            ]
+        },
+        {
+            "Location":"Base Militar",
+            "Roles":[
+                "Desertor",
+                "Coronel",
+                "Sargento",
+                "Médico",
+                "Sniper de Elite",
+                "Soldado",
+                "Engenheiro de Tanque",
+                "Major"
+            ]
+        },
+        {
+            "Location":"Estúdio de Filmes",
+            "Roles":[
+                "Dublê",
+                "Mixer de Som",
+                "Câmera-man",
+                "Diretor",
+                "Estilista",
+                "Produtor",
+                "Ator"
+            ]
+        },
+        {
+            "Location":"Cruzeiro",
+            "Roles":[
+                "Cozinheiro",
+                "Capitão",
+                "Bartender",
+                "Músico",
+                "Garçom",
+                "Camareira",
+                "Passageiro Rico",
+                "Passageiro"
+            ]
+        },
+        {
+            "Location":"Barco Pirata",
+            "Roles":[
+                "Cozinheiro",
+                "Escravo",
+                "Lançador de Canhão",
+                "Prisioneiro Amarrado",
+                "Filho do Capitão",
+                "Capitão",
+                "Marujo",
+                "Papagaio"
+            ]
+        },
+        {
+            "Location":"Estação Polar",
+            "Roles":[
+                "Medico",
+                "Líder da Expedição",
+                "Biólogo",
+                "Operador de Rádio",
+                "Meteorologista",
+                "Urso",
+                "Geólogo"
+            ]
+        },
+        {
+            "Location":"Departamento de Polícia",
+            "Roles":[
+                "Detetive",
+                "Advogado",
+                "Jornalista",
+                "Criminoso",
+                "Secretário",
+                "Guarda Civil",
+                "Policial"
+            ]
+        },
+        {
+            "Location":"Fórum",
+            "Roles":[
+                "Criminoso",
+                "Advogado",
+                "Delator",
+                "Defesa",
+                "Réu",
+                "Juiz",
+                "Oficial de Justiça",
+                "Membro do Júri",
+                "Civil",
+                "Guarda"
+            ]
+        },
+        {
+            "Location":"Restaurante",
+            "Roles":[
+                "Músico",
+                "Garçom",
+                "Recepcionista",
+                "Chef",
+                "Ajudante de Chef",
+                "Line Chef",
+                "Crítico Gastronômico",
+                "Cliente"
+            ]
+        },
+        {
+            "Location":"Escola",
+            "Roles":[
+                "Professor de Geografia",
+                "Professor de Português",
+                "Professor de Matemática",
+                "Diretor",
+                "Coordenador",
+                "Moça do Lanche",
+                "Zelador",
+                "Estudante"
+            ]
+        },
+        {
+            "Location":"Mecânica",
+            "Roles":[
+                "Gerente",
+                "Especialista em Carros",
+                "Especialista em Motos",
+                "Dono do veículo",
+                "Carro",
+                "Eletricista",
+                "Mecânico de Peças"
+            ]
+        },
+        {
+            "Location":"Estação Espacial",
+            "Roles":[
+                "Engenheiro",
+                "Alienígena",
+                "Piloto",
+                "Comandante",
+                "Cientista",
+                "Doutor",
+                "Turista Espacial"
+            ]
+        },
+        {
+            "Location":"Submarino",
+            "Roles":[
+                "Cozinheiro",
+                "Comandante",
+                "Técnico de Sonar",
+                "Técnico em Eletrônicos",
+                "Técnico em Rádio",
+                "Navegante",
+                "Marinheiro"
+            ]
+        },
+        {
+            "Location":"Supermercado",
+            "Roles":[
+                "Atendente de Caixa",
+                "Açougueiro",
+                "Zelador",
+                "Segurança",
+                "Demonstrador de Comida de Amostra",
+                "Desembalador",
+                "Cliente"
+            ]
+        },
+        {
+            "Location":"Teatro",
+            "Roles":[
+                "Atendente",
+                "Cenário",
+                "Caixa",
+                "Diretor",
+                "Ator",
+                "Contra-Regra",
+                "Zelador",
+                "Estudante"
+            ]
+        },
+        {
+            "Location":"Universidade",
+            "Roles":[
+                "Estudante de Graduação",
+                "Professor",
+                "Reitor",
+                "Zelador",
+                "Estudante de Mestrado",
+                "Psicológo",
+                "Cara da Manutenção",
+                "Bibliotecária",
+                "Cara do TI"
+            ]
+        },
+        {
+            "Location":"Batalhão da Segunda Guerra Mundial",
+            "Roles":[
+                "Combatente",
+                "Pessoa da Inteligência",
+                "Olheiro",
+                "Médico",
+                "Cozinheiro",
+                "Nazista Aprisionado",
+                "Soldado"
+            ]
+        },
+        {
+            "Location":"Casa",
+            "Roles":[
+                "Janela de Vidro",
+                "Porta",
+                "Interruptor",
+                "Privada",
+                "Lixeira",
+                "Geladeira",
+                "Chaminé",
+                "Fogão",
+                "Pia"
+            ]
+        },
+        {
+            "Location":"Bordel",
+            "Roles":[
+                "Prosituta",
+                "Pervertido",
+                "Segurança",
+                "Bartender",
+                "Gerente",
+                "Zelador",
+                "Stripper"
+            ]
+        },
+        {
+            "Location":"Templo",
+            "Roles":[
+                "Monge",
+                "Budista",
+                "Crente",
+                "Aluno",
+                "Cozinheiro",
+                "Professor"
+            ]
+        },
+        {
+            "Location":"Academia",
+            "Roles":[
+                "Cara Bombado",
+                "Cara Suado",
+                "Cara Esforçado",
+                "Cara da Selfie no Espelho",
+                "Zelador",
+                "Cara Tomando uma Ducha"
+            ]
+        }
+    ]
+}

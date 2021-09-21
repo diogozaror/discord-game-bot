@@ -1,0 +1,2 @@
+python discord_games.py
+pause
