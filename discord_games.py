@@ -14,7 +14,9 @@ if os.path.exists('config.json'):
 bot_token = configs['discord']['token']
 bot_trigger = configs['discord']['trigger']
 
-client = discord.Client()
+intents = discord.Intents.all()
+
+client = discord.Client(intents=intents)
 
 
 def embed_content(titulo, descricao):
@@ -29,7 +31,7 @@ def embed_content(titulo, descricao):
 async def on_raw_reaction_add(event):
     channel_id = event.channel_id
     emoji = event.emoji
-    user = client.get_user(event.user_id)
+    user = await client.fetch_user(event.user_id)
     msg_id = event.message_id
 
     if user is None:
@@ -121,8 +123,13 @@ async def on_message(message):
             user_id = (args[1][2:len(args[1]) - 1])
             user_id = user_id.replace('!', '')
             user_id = user_id.replace('e', '')
-            user_id = int(user_id)
-            user = client.get_user(user_id)
+            print(user_id)
+            try:
+                user_id = int(user_id)
+            except:
+                await message_channel.send(embed=embed_content('Erro', 'Algo deu errado!'))
+            user = await client.fetch_user(user_id)
+            print(user)
             if user is not None:
                 game = manager.getgameowned(user_id)
                 if game is not None:
@@ -146,7 +153,7 @@ async def on_message(message):
             user_id = (args[1][2:len(args[1]) - 1])
             user_id = user_id.replace('!', '')
             user_id = int(user_id)
-            user = client.get_user(user_id)
+            user = await client.fetch_user(user_id)
             if user is not None:
                 game = manager.getgameowned(user_id)
                 if game is not None:
@@ -177,7 +184,7 @@ async def on_message(message):
             user_id = (args[1][2:len(args[1]) - 1])
             user_id = user_id.replace('!', '')
             user_id = int(user_id)
-            user = client.get_user(user_id)
+            user = await client.fetch_user(user_id)
             if user is not None:
                 game = manager.getgameowned(message_author_id)
                 if game is not None:
@@ -271,13 +278,13 @@ async def on_message(message):
         for player in game.players:
             if message_channel == player.getDMChannel():
                 if player.nome == message_author_id:
-                    mestre = client.get_user(game.dono)
+                    mestre = await client.fetch_user(game.dono)
                     await mestre.send(f'<@{player.nome}> ({player.tipo}): {message_content}')
 
                     if player.tipo != 'Civil':
                         for player2 in game.players:
                             if player2.tipo == player.tipo and player2.nome != player.nome:
-                                playerTo = client.get_user(player2.nome)
+                                playerTo = await client.fetch_user(player2.nome)
                                 await playerTo.send(f'<@{player.nome}> ({player.tipo}): {message_content}')
 
 

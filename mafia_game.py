@@ -116,7 +116,7 @@ class Mafia_Game(game.Game, commands.Cog):
 
         for x in range(len(self.players)):
             if self.players[x].tipo == 'Assassino':
-                user = self.client.get_user(self.players[x].nome)
+                user = await self.client.fetch_user(self.players[x].nome)
                 msg = await user.send(embed=self.embed_content(self.players[x].tipo, "Você é um ***assassino***! \n "
                                                                                      "Tudo que você digitar nesse canal\n"
                                                                                      "será enviado para o mestre e para\n"
@@ -125,7 +125,7 @@ class Mafia_Game(game.Game, commands.Cog):
                 self.mensagensCriadas.append({'nome': user, 'msg': msg})
                 self.players[x].adicionarDMChannel(msg.channel)
             if self.players[x].tipo == 'Policial':
-                user = self.client.get_user(self.players[x].nome)
+                user = await self.client.fetch_user(self.players[x].nome)
                 msg = await user.send(embed=self.embed_content(self.players[x].tipo, "Você é um ***policial***! \n "
                                                                                      "Tudo que você digitar nesse canal\n"
                                                                                      "será enviado para o mestre e para\n"
@@ -134,7 +134,7 @@ class Mafia_Game(game.Game, commands.Cog):
                 self.mensagensCriadas.append({'nome': user, 'msg': msg})
                 self.players[x].adicionarDMChannel(msg.channel)
             if self.players[x].tipo == 'Curandeiro':
-                user = self.client.get_user(self.players[x].nome)
+                user = await self.client.fetch_user(self.players[x].nome)
                 msg = await user.send(embed=self.embed_content(self.players[x].tipo, "Você é um ***curandeiro***! \n "
                                                                                      "Tudo que você digitar nesse canal\n"
                                                                                      "será enviado para o mestre e para\n"
@@ -142,7 +142,7 @@ class Mafia_Game(game.Game, commands.Cog):
                 self.mensagensCriadas.append({'nome': user, 'msg': msg})
                 self.players[x].adicionarDMChannel(msg.channel)
             if self.players[x].tipo == 'Civil':
-                user = self.client.get_user(self.players[x].nome)
+                user = await self.client.fetch_user(self.players[x].nome)
                 msg = await user.send(
                     embed=self.embed_content(self.players[x].tipo, "Você é um ***civil***! \n Boa sorte!"))
 
@@ -180,7 +180,7 @@ class Mafia_Game(game.Game, commands.Cog):
         return emojis
 
     async def enviar_painel(self):
-        mestre = self.client.get_user(self.dono)
+        mestre =await self.client.fetch_user(self.dono)
 
         if mestre is None:
             return
